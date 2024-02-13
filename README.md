@@ -104,7 +104,7 @@ define('SHOW_ERROR_DETAIL', true);
 ```
 
 </details>
-<br>
+
 Done.
 
 ## Functionality
