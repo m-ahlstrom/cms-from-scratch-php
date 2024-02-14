@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom('sender@example.com');
+            $mail->setFrom($email);
             $mail->addAddress('recipient@example.com');
             $mail->addReplyTo($email);
             $mail->Subject = $subject;
