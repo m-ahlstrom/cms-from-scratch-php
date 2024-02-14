@@ -26,6 +26,36 @@ class User
     public $password;
 
     /**
+     * Register a user with username and password.
+     *
+     * @param object $conn Connection to the database.
+     *
+     * @return boolean True if registration is successful, null otherwise.
+     */
+    public function register($conn)
+    {
+        $sql = "INSERT INTO users (username, password)
+        VALUES (:username, :password)";
+
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        $stmt = $conn->prepare($sql);
+
+        $stmt->bindValue(':username', $this->username, PDO::PARAM_STR);
+        $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'User');
+
+        if ($stmt->execute()) {
+            $this->id = $conn->lastInsertId();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    /**
      * Authenticate a user by username and password.
      *
      * @param object $conn Connection to the database.
