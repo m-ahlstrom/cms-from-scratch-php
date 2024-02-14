@@ -60,7 +60,6 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
-
 ALTER TABLE `articles`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
 
@@ -69,7 +68,6 @@ ALTER TABLE `categories`
 
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
 
 ALTER TABLE `article_category`
   ADD CONSTRAINT `article_category_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `articles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -93,7 +91,7 @@ define('DB_NAME', 'YOUR-DB-NAME');
 define('DB_USER', 'YOUR-DB-USERNAME');
 define('DB_PASS', 'YOUR-DB-PASSWORD');
 
-define('SMTP_HOST', 'YOUR-SMTP-SERVER'); (e. g. smtp.gmail.com)
+define('SMTP_HOST', 'YOUR-SMTP-SERVER');
 define('SMTP_USER', 'YOUR-EMAIL-ADDRESS');
 define('SMTP_PASS', 'YOUR-EMAIL-PASSWORD');
 
