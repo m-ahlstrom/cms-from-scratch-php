@@ -7,7 +7,7 @@ A basic CMS built with PHP from scratch for the PHP for Beginners course on Udem
 First of all, start Apache and MariaDB/MySQL e. g. in XAMPP.
 
 <details>
-  <summary>1. Clone git repository.</summary>
+  <summary>1. Clone git repository. Copy all content (out of the automatically created cms_from_scratch_php folder) to your localhost root folder (the default folder for XAMPP is C:/XAMPP/htdocs), otherwise the redirections won't work properly.</summary>
 
 ```
 git clone https://github.com/m-ahlstrom/cms_from_scratch_php.git
