@@ -16,7 +16,7 @@ git clone https://github.com/m-ahlstrom/cms_from_scratch_php.git
 </details>
 
 <details>
-  <summary>2. In phpMyAdmin, set up your database. First create a new database with a custom name, then on the SQL tab, run the following query. <strong>You must add a user in the users table with a hash as a password, otherwise you won't be able to log in.</strong></summary>
+  <summary>2. In phpMyAdmin, set up your database. First create a new database with a custom name, then on the SQL tab, run the following query.</summary>
 
 ```SQL
 CREATE TABLE `articles` (
@@ -107,4 +107,4 @@ Done.
 
 ## Functionality
 
-You can <strong>read articles</strong> in the main index page, <strong>send an e-mail</strong> or <strong>log in</strong>. If you are logged in, you can view <strong>the admin panel</strong> or <strong>log out</strong>. In the admin panel you can: <strong>add</strong> articles, <strong>edit</strong> articles, <strong>delete</strong> articles, <strong>publish articles</strong> that have no publish date yet, <strong>upload images</strong> to articles and <strong>delete</strong> article <strong>images</strong>. Finally, you can <strong>add categories</strong> for articles (but you have to have categories for that in the categories table).
+You can <strong>read articles</strong> in the main index page, <strong>send an e-mail</strong>, <strong>log in</strong> or <strong>register a new user</strong>. If you are logged in, you can view <strong>the admin panel</strong> or <strong>log out</strong>. In the admin panel you can: <strong>add</strong> articles, <strong>edit</strong> articles, <strong>delete</strong> articles, <strong>publish articles</strong> that have no publish date yet, <strong>upload images</strong> to articles and <strong>delete</strong> article <strong>images</strong>. Finally, you can <strong>add categories</strong> for articles (but you have to have categories for that in the categories table).
