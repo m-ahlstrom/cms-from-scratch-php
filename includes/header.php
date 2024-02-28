@@ -21,20 +21,20 @@
 
         <nav>
             <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/">Home</a></li>
 
                 <?php if (Auth::isLoggedIn()): ?>
 
-                    <li class="nav-item"><a class="nav-link" href="/admin/">Admin</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/logout.php">Log out</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/admin/">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/logout.php">Log out</a></li>
 
                 <?php else: ?>
 
-                    <li class="nav-item"><a class="nav-link" href="/login.php">Log in</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/register.php">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/login.php">Log in</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/register.php">Register</a></li>
 
                 <?php endif; ?>
-                <li class="nav-item"><a class="nav-link" href="/contact.php">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cms_from_scratch_php/contact.php">Contact</a></li>
             </ul>
         </nav>
 

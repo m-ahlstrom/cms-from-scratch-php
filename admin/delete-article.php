@@ -21,7 +21,7 @@ if (isset($_GET['id'])) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($articles->delete($conn)) {
-        Url::redirect("/admin/index.php");
+        Url::redirect("/cms_from_scratch_php/admin/index.php");
     }
 }
 

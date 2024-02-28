@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     unlink("../uploads/$previous_image");
                 }
 
-                Url::redirect("/admin/edit-article-image.php?id={$articles->id}");
+                Url::redirect("/cms_from_scratch_php/admin/edit-article-image.php?id={$articles->id}");
             }
 
         } else {
