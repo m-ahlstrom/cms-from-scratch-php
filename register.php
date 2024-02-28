@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user->register($conn)) {
 
-        Url::redirect("/index.php");
+        Url::redirect("/cms_from_scratch_php/index.php");
 
     }
 }

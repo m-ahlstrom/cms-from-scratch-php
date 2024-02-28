@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($articles->update($conn)) {
         $articles->setCategories($conn, $category_ids);
-        Url::redirect("/admin/article.php?id={$articles->id}");
+        Url::redirect("/cms_from_scratch_php/admin/article.php?id={$articles->id}");
     }
 }
 
