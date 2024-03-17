@@ -1,6 +1,6 @@
 # CMS from Scratch
 
-A basic CMS built with PHP from scratch for the PHP for Beginners course on Udemy.
+A basic CMS built with PHP from scratch. The code in this project is based on the [PHP for Beginners](https://www.udemy.com/course/php-for-beginners-/) course by Tim Buchalka from Udemy.
 
 ## Steps to build it locally:
 
